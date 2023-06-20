@@ -1,0 +1,154 @@
+@import "general.css";
+
+main {
+    min-height: 100vh;
+    background-image: url("../img/poster_event.jpg");
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+h1 {
+    font-size: 1.4em;
+    text-align: center;
+}
+.logo, footer {
+    color: #ffffff;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+/* .logo a{
+    background-color: #ffffff;
+    border-radius: 100px;
+
+    padding: 15px;  
+} */
+.logo img {
+
+    width: 150px;
+}
+.auth_input{
+    border-radius: 10px;
+}
+
+
+.auth_container {
+    background: #ffffff;
+    padding: 40px 40px 60px 40px;
+    border-radius: 10px;
+    width: 640px;
+}
+.auth_head {
+    width: 70%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.auth_head .active {
+    color: #ffffff;
+    background-color: #0062AB;
+    border-radius: 10px;
+    padding: 1em;
+}
+.auth_form {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.auth_form input {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 5px;
+    outline: none;
+    border-radius: unset;
+    border: 2px solid black;
+}
+.auth_form input:focus {
+    border: 2px solid #0062AB;
+}
+.auth_form label {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.form_btn {
+    margin: 30px 0;
+}
+footer {
+    margin: 10px;
+    text-align: center;
+}
+
+.success {
+    text-align: center;
+}
+.success h3 {
+    color: #0062AB;
+}
+.success .info {
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 1.5;
+}
+.success a {
+    color: #0062AB;
+    font-weight: bold;
+}
+.success a:hover {
+    text-decoration: underline;
+}
+
+
+.blue_link {
+    color: #0062AB;
+}
+.blue_link:hover {
+    text-decoration: underline;
+}
+.reseat_head {
+    flex-direction: column;
+    text-align: center;
+}
+.reset_back {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.errors {
+    color: red;
+    text-align: center;
+}
+
+/* Медиа */
+
+@media screen and (max-width:720px) {
+
+    html {
+        font-size: 14px;
+    }
+    .auth_container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 20px 40px 20px;
+    }
+    .auth_form {
+        width: 90%;
+    }
+    .auth_head a {
+        margin: 10px 0;
+    }
+    .auth_head {
+        margin: 0 auto 20px auto;
+    }
+    .logo img {
+        width: 80px;
+    }
+}

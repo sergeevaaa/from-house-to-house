@@ -1,0 +1,1232 @@
+@import "general.css";
+
+/* Header */
+
+header, .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_container {
+    position: sticky;
+    z-index: 99999;
+    background-image: url("../img/head.jpg");
+    
+    top: 0;
+}
+header {
+    color: #ffffff;
+    padding: 10px 220px;
+    background-image: url("../img/head.jpg");
+}
+.logo img {
+    width: 100px;
+}
+/* .header_link {
+    
+    font-size: 1.2em;
+} */
+
+.header_link{
+    font-size:1.2em;
+    font-style:unset;
+    padding: 10px;
+    border: 1px #fff solid;
+    border-radius: 10px;
+    border-color: #2C7DBB , 0.2;
+    margin: 20px;
+}
+header a:hover {
+    font-weight: bold;
+}
+
+
+/* Burger Menu */
+
+.burger_button {
+    display: none;
+    margin-left: 10px;
+}
+.burger_button span, .burger_button:before, .burger_button:after {
+    display: block;
+    position: relative;
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #ffffff;
+}
+.burger_button span{
+    top: 0;
+    transition: 0.5s;
+}
+.burger_button:before {
+    bottom: 12px;
+    transition: 0.4s;
+}
+.burger_button:after {
+    top: 12px;
+    transition: 0.4s;
+}
+
+.burger_button.active span{
+    opacity:0;
+}
+.burger_button.active:before{
+    transform: rotate(38deg);
+    bottom: -4.7px;
+}
+.burger_button.active:after{
+    transform: rotate(-38deg);
+    top: -4.7px;
+}
+
+.header_link.burger_link {
+    font-weight: bold;
+}
+.burger_link {
+    display: none;
+}
+.sp_link {
+    display: none;
+    text-decoration: underline;
+}
+.sp_link {
+    margin: 20px 0;
+}
+.sp_link a {
+    margin: 10px 0;
+}
+
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    background: #0062AB;
+    padding: 10px 18.2vw;
+    font-size: 1em;
+    z-index: 2;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main */
+
+main {
+    min-height: calc(100vh - 155px);
+    background-image: url("../img/back.webp");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 20%;
+}
+.content_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    width: 1600px;
+    margin: 0 auto;
+    min-height: inherit;
+    padding: 30px 70px;
+}
+.primers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block_primer{
+    width: 600px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.app_video_primer{
+width: 400px;
+height: 240px;
+    padding: 0px;
+margin: auto;
+    align-items: center;
+    text-align: center;
+    ma
+}
+
+.app_video_primer iframe{
+    
+    margin: 0;
+}
+
+/* Content */
+
+.content h2 {
+    color: #003965;
+    margin-bottom: 30px;
+}
+.content h4 {
+    color: #003965;
+    font-size: 1em;
+    margin: 20px 0 10px 0;
+}
+
+.info_block {
+    line-height: 1.5;
+    text-indent: 1.25em;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.info_p {
+    line-height: 1.5;
+    text-align: justify;
+}
+.info_block p {
+    margin-bottom: 1em;
+}
+.info_block p:last-child {
+    margin-bottom: 0;
+}
+.info_block a {
+    text-decoration: underline;
+}
+.info_block .link_to_container {
+    margin: 2em 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.att_text {
+    color: red;
+    font-weight: bold;
+}
+.text_mail {
+    text-decoration: underline;
+    color: #003965;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer_links a {
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+}
+.footer_links a:hover {
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+
+/* Регистрация участников */
+
+.registration_block form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.reg_element {
+    width: 100%;
+    background: #f7f9ff;
+    border: 2px solid #003965;
+    border-radius: 7px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.reg_element input, .reg_element select {
+    font-size: 1em;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 5px 0;
+    margin-top: 20px;
+    background: #f7f9ff;
+}
+.reg_element select {
+    font-family: Montserrat, sans-serif;
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding-left: 10px;
+    cursor: pointer;
+    background: #ffffff;
+}
+.reg_element select:focus {
+    border: 1px solid #0062AB;
+}
+.reg_element .note {
+    margin-top: 5px;
+    font-size: .8em;
+}
+.reg_element input:focus {
+    border-bottom: 1px solid #0062AB;
+}
+.main_btn {
+    margin: 0 auto;
+    width: 300px;
+    border: none;
+    border-radius: 7px;
+}
+.radio_input input {
+    margin-right: 5px;
+}
+.error_info {
+    margin: 100px 0;
+    text-align: center;
+}
+.error_info p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    color: #0062AB;
+    font-weight: bold;
+}
+
+
+/* Личный кабинет */
+
+.festival_block {
+    width: 100%;
+    border: 2px solid #0062AB;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+.account_festivals .festival_block {
+    text-indent: 1em !important;
+}
+.festival_head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.festival_name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.festival_name h3 {
+    margin-right: 10px;
+}
+.festival_name span {
+    font-style: italic;
+}
+.festival_status {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #0062AB;
+}
+.red_note {
+    font-style: italic;
+    color: red;
+    line-height: 1.5;
+}
+.festival_links {
+    margin: 10px 0;
+}
+.festival_link {
+    text-decoration: underline !important;
+    cursor: pointer;
+    margin-right: 10px;
+    background: none;
+    font-weight: normal;
+}
+.festival_info p {
+    line-height: 1.5;
+}
+
+.red_block {
+    border: 2px solid red;
+}
+.red_block .festival_status {
+    color: red;
+}
+
+.user_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.user_info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.user_photo {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 40px;
+}
+.user_data {
+    margin-top: 10px;
+}
+.user_data p {
+    margin-bottom: 20px;
+}
+.user_photo_btn {
+    cursor: pointer;
+    color: #0062AB;
+    font-weight: bold;
+}
+.user_actions {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user_actions a {
+    padding: 8px 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.user_actions a:first-child {
+    margin-right: 20px;
+}
+.red_btn {
+    background: red;
+}
+.red_btn:hover {
+    background: #ff4f4f;
+}
+
+.edit_name input {
+    font-size: 1em;
+    margin-right: 15px;
+}
+.user_name_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.user_name_block p {
+    margin: 0 5px 0 0;
+}
+.user_name {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.user_name span {
+    margin-right: 15px;
+}
+.edit_name {
+    display: flex;
+    align-items: center;
+}
+.edit_name input {
+    border: none;
+    outline: none;
+    padding: 1px 0;
+    border-bottom: 1px solid black;
+}
+.edit_name input:focus {
+    border-bottom: 1px solid  #0062AB;
+}
+.image_btn {
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.image_in_btn {
+    display: block;
+    width: 23px;
+    cursor: pointer;
+}
+
+/* Панель администратора */
+
+.logo h2 {
+    font-weight: normal;
+    font-size: 1.1em;
+    font-family: Montserrat-Light, sans-serif;
+}
+
+.festival {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #0062AB;
+    background: #f7f9ff;
+    margin-bottom: 20px;
+}
+.festival_actions {
+    display: flex;
+    flex-wrap: wrap;
+}
+.festival_actions a {
+    color: #0062AB;
+    margin-right: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.festival_actions a:last-child {
+    margin-right: 0;
+}
+.festival_actions a:hover {
+    text-decoration: underline;
+}
+.admin_actions {
+    margin: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.admin_btn {
+    border: 2px solid #0062AB;
+    border-radius: 7px;
+    padding: 10px 30px;
+    background: white;
+    color: #0062AB;
+}
+.admin_btn:hover {
+    background: #0062AB;
+    color: white;
+}
+.green_btn {
+    border: 2px solid green;
+    color: green;
+}
+.green_btn:hover {
+    background: green;
+    color: white;
+}
+.admin_form {
+    display: flex;
+    flex-direction: column;
+}
+.admin_form label, .simple_form label {
+    margin-bottom: 5px;
+}
+.admin_form input, .simple_form input, .admin_form textarea {
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 2px solid gray;
+    outline: none;
+    width: 500px;
+}
+.admin_form textarea {
+    border-radius: 0;
+}
+.admin_form input:focus, .simple_form input:focus {
+    border: 2px solid #0062AB;
+}
+.form_dates {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.form_date {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.form_date input {
+    background: white;
+    width: 230px;
+}
+
+.admin_form button {
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.add_technology_block {
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    max-height: 400px;
+    overflow: auto;
+}
+.add_technology {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0 !important;
+    border-bottom: 2px solid gray;
+}
+.add_technology:hover {
+    cursor: pointer;
+    background: #f1f1f1;
+}
+.add_technology:last-child {
+    margin-bottom: 0;
+    border: none;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.add_technology:first-child {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+.add_technology input {
+    width: unset;
+    transform: scale(1.2);
+    margin: 0 15px 0 0;
+}
+.add_technology label {
+    cursor: pointer;
+    margin: 0;
+}
+
+.admin_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.admin_table tr td, .admin_table tr th {
+    padding: 10px 20px;
+}
+.admin_table tr th {
+    background: #007cd9;
+    color: white;
+}
+.admin_table tr:nth-child(2n) {
+    background: #f3f6ff;
+}
+.table_actions {
+    width: 200px
+}
+.table_action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table_action * {
+    margin: 0 5px;
+}
+.table_action img {
+    width: 30px;
+}
+.simple_form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+.input_block {
+    display: flex;
+    flex-direction: column;
+}
+.simple_form button {
+    width: 300px;
+    padding: 7px 0;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.simple_form input {
+    width: 500px;
+    margin: 0 20px 20px 0;
+}
+
+
+/* Просмотр заявки */
+
+.app_block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.app_video {
+    position: relative;
+    height: 355px;
+    width: 560px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.app_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 111%;
+    border-width: 0;
+    outline-width: 0;
+}
+.app_info {
+    margin-bottom: 20px;
+}
+.app_comments_block {
+    margin-top: 30px;
+}
+.app_comments_block h3 {
+    color: #003965;
+}
+.comment_form {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin: 20px 0 50px 0;
+}
+.comment_form textarea {
+    flex-grow: 1;
+    margin-right: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1em;
+    padding: 5px 0;
+    text-indent: 1em;
+    outline: none;
+    resize: none;
+}
+.comment_form textarea:focus {
+    border-bottom: 1px solid #0062AB;
+}
+.comment_form button {
+    font-size: 1em;
+    padding: 6px 10px;
+}
+
+.comment {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background: #edf2f7;
+    margin-bottom: 20px;
+}
+.comment_photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: silver;
+    background-position: center center;
+    margin-right: 20px;
+}
+.comment_user {
+    display: flex;
+    margin-bottom: 10px;
+}
+.comment_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comment_info span {
+    color: gray;
+    font-size: 0.9em;
+}
+.comment_body {
+    text-indent: 1em;
+    line-height: 1.5;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.video_link {
+    margin: 0 0 0 1em !important;
+    align-items: flex-start;
+    display: block !important;
+}
+.video_link span {
+    padding: 6px 20px !important;
+}
+.comment_alert {
+    margin: 20px 0 40px 0;
+    font-style: italic;
+}
+.app_comments {
+    margin-top: 5px;
+}
+
+
+/* Управление заявками */
+
+.app_select {
+    font-size: 1em;
+    border: 2px solid #0062AB;
+    border-radius: 7px;
+    padding: 10px 30px 10px 20px;
+    cursor: pointer;
+    outline: none;
+    color: #0062AB;
+    font-weight: bold;
+    margin-right: 10px;
+    background: white;
+}
+.festival_apps_block {
+    margin-bottom: 50px;
+}
+.festival_apps_block h3 {
+    color: #003965;
+    margin-bottom: 10px;
+}
+.apps_table tr td{
+    text-align: center;
+}
+.admin_app_info {
+    text-indent: unset;
+    text-align: unset;
+    word-wrap: break-word;
+}
+.app_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.select_button_block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.app_form select {
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 20px 5px 10px;
+    cursor: pointer;
+    margin: 10px 25px 10px 0;
+    background: white;
+}
+.app_form select:focus {
+    border: 1px solid #0062AB;
+}
+.app_form button {
+    margin: 10px 10px 10px 0;
+    width: 200px;
+}
+.festival_apps_block_overflow {
+    overflow: auto;
+}
+.app_form textarea {
+    font-size: 1em;
+    text-indent: 1em;
+    padding: 10px 5px;
+    outline: none;
+    width: 50%;
+    border: 1px solid black;
+}
+.app_form textarea:focus {
+    border: 1px solid #0062AB;
+}
+.app_form textarea.red_border {
+    border: 1px solid red;
+}
+.app_form textarea.red_border:focus {
+    border: 1px solid red;
+}
+.app_status_col {
+    width: 250px;
+}
+
+
+/* Фестивали */
+
+.festival_count {
+    margin: 5px 0;
+    width: 100%;
+}
+.actual_festival .festival {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-indent: 1em;
+}
+.actual_festival .festival:hover, .festival_technology_block:hover {
+    background: #edf1ff;
+}
+.archive_festivals .festival {
+    margin-bottom: 20px;
+}
+.festival_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.festival_actions span {
+    color: #0062AB;
+    margin-right: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.festival_info {
+    padding-top: 10px;
+    width: 100%;
+    text-indent: 1em;
+}
+
+
+/* Отдельный фестиваль */
+
+.festival_technologies_block {
+    margin-top: 30px;
+    border: 2px solid #0062AB;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.festival_technology_block {
+    background: #edf2f7;
+}
+.festival_apps {
+    background: white;
+    display: none;
+    animation: 1s showApp ease-in-out;
+}
+.festival_technology, .festival_apps div {
+    padding: 10px 20px;
+    border-top: 2px solid #0062AB;
+}
+.festival_technologies:first-child .festival_technology {
+    border-top: 0;
+}
+.festival_technology {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.festival_technology span {
+    margin-right: 10px;
+}
+.festival_technology img{
+    margin-right: 20px;
+    transition: .4s ease-out;
+}
+.festival_technology img.active {
+    transform: rotate(180deg);
+}
+.festival_apps div a:hover {
+    color: #0062AB;
+    text-decoration: underline;
+}
+
+
+
+/* Участники и гости */
+
+.members_nav {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.members_nav button {
+    margin: 10px 10px 0 0;
+    background: none;
+    font-weight: normal;
+}
+.members_nav button:hover {
+    color: #0062AB;
+}
+.members_nav button.active {
+    font-weight: bold;
+    color: #0062AB;
+    
+}
+.table_overflow {
+    overflow: auto;
+}
+.members_table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+.members_table tr th {
+    background: #0062AB;
+    color: white;
+    font-weight: normal;
+}
+.members_table tr td, .members_table tr th {
+    padding: 10px 50px;
+}
+.members_table a {
+    text-decoration: underline;
+}
+.members_table a:hover {
+    color: #0062AB;
+}
+.members_table tr:nth-child(2n+1) {
+    background: #f3f6ff;
+}
+
+
+/* Карта сайта */
+
+.sitemap_block {
+    overflow: auto;
+}
+.sitemap p {
+    margin-bottom: 5px;
+}
+.links_container {
+    display: none;
+    flex-direction: column;
+    padding-left: 2%;
+    line-height: 1.5;
+}
+.links_container span a:hover {
+    color: #0062AB;
+    text-decoration: underline;
+}
+.open_link {
+    display: flex;
+    align-items: center;
+}
+.open_link img {
+    display: block;
+    margin-right: 10px;
+    transition: .2s ease-out;
+}
+.links_container.active {
+    display: flex;
+}
+.main_container {
+    display: flex;
+}
+.map_btn.active img {
+    transform: rotate(45deg);
+}
+
+
+
+.all_link {
+    margin-top: 20px;
+    color: #0062AB;
+}
+.all_link a:hover {
+    text-decoration: underline;
+}
+.app_link {
+    line-height: 1.5;
+    font-weight: normal;
+    color: black;
+}
+.app_link a:hover {
+    color: #0062AB;
+    text-decoration: underline;
+}
+.app_list {
+    padding-left: 20px;
+    color: #0062AB;
+}
+
+/* Админ - О фестивале */
+
+.about_block {
+    margin-top: 50px;
+}
+.about_form {
+    margin-top: 30px;
+}
+.about_form button {
+    margin: 20px auto;
+}
+.about_file_info {
+    margin: 0 5px;
+    font-style: italic;
+}
+.about_title {
+    text-align: center;
+    color: #0062AB;
+    margin: 40px 0 10px 0;
+}
+.about_area {
+    width: 100% !important;
+    border: 1px solid silver !important;
+    padding: 10px !important;
+    margin-bottom: 0 !important;
+}
+.about_area:focus {
+    border: 1px solid #0062AB !important;
+}
+.about_reset_btn {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+/* Модальные окна */
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: .4;
+    position: fixed;
+    z-index: 20;
+}
+
+dialog {
+    position: fixed;
+    width: 600px;
+    background: white;
+    border: 3px solid #003965;
+    border-radius: 15px;
+    padding: 40px 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 21;
+    text-align: center;
+}
+dialog h2 {
+    margin-bottom: 40px;
+}
+dialog p {
+    margin-bottom: 20px !important;
+}
+.dialog_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.dialog_buttons button {
+    margin: 10px;
+    width: 200px;
+    background: #0062AB;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    border: 2px solid #0062AB;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.dialog_cancel_btn {
+    color: #003965 !important;
+    border: 2px solid #003965 !important;
+    background: white !important;
+}
+.dialog_cancel_btn:hover {
+    color: #0062AB !important;
+    border: 2px solid #0062AB !important;
+}
+
+
+/* Управление комментариями */
+
+.comment_top_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.comment_top_info img {
+    width: 32px;
+}
+.comment_top_info a {
+    font-weight: bold;
+    color: #0062AB;
+}
+
+
+/* Выплывающие сообщения */
+
+.att_message {
+    background: #f1f1f1;
+    position: fixed;
+    z-index: 15;
+    width: 50%;
+    padding: 30px;
+    bottom: 20px;
+    left: 20px;
+    border: 2px solid #003965;
+    border-radius: 7px;
+    color: green;
+    font-weight: bold;
+    animation: .5s MessageShow ease-out;
+}
+
+@keyframes MessageShow {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 20px;
+    }
+}
+
+
+/* Специальные стили */
+
+.d_none {
+    display: none;
+}
+
+.att_text {
+    color: red;
+    font-weight: bold;
+}
+
+.text_mail {
+    text-decoration: underline;
+    color: #003965;
+}
+
+.link_to {
+    text-decoration: none !important;
+}
+.link_to span {
+    color: #ffffff;
+    border-radius: 8px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background: #0062AB;
+    text-decoration: none;
+    transition: .5s;
+}
+.link_to span:hover {
+    background: #007cd9;
+}
+.link_to img {
+    width: 20px;
+
+}
+.regular_h {
+    font-weight: normal;
+}
+.text_left {
+    text-align: left !important;
+}
+.bold_text {
+    color: #0062AB;
+    font-weight: bold;
+}
+.blue_text {
+    color: #0062AB;
+}
+.blue_link {
+    color: #0062AB;
+}
+.blue_link:hover {
+    text-decoration: underline;
+}
+
+
+

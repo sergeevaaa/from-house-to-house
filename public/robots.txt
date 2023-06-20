@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /account
+Disallow: /account/*
+Disallow: /auth
+Disallow: /auth/*
+Disallow: /reg
+Disallow: /admin
+Disallow: /admin/*
+Disallow: *PHPSESSID=
+Disallow: *session_id=
+
+Sitemap: /sitemap.xml
